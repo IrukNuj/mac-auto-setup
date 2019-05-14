@@ -166,6 +166,9 @@ if ! command_exists carthage ; then
     brew install go
 fi
 
+# 便利なの、個人的に使うやつ
+brew list | grep hugo || brew install hugo
+
 
 while true; do
   read -p 'Now install web apps? [Y/n]' Answer
@@ -176,7 +179,7 @@ while true; do
       ;;
     [Nn]* )
       echo "Skip install"
-      break;
+      break; 
       ;;
     * )
       echo Please answer YES or NO.
