@@ -30,14 +30,14 @@ fi
 #
 # Install zsh
 #
-if ! command_exists zsh ; then
-  echo " ------------ zsh ------------"
-  brew install zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting colordiff
-  which -a zsh
-  echo $pass | sudo -S -- sh -c 'echo '/usr/local/bin/zsh' >> /etc/shells'
-  chsh -s /usr/local/bin/zsh
-  echo " ------------ END ------------"
-fi
+# if ! command_exists zsh ; then
+#   echo " ------------ zsh ------------"
+#   brew install zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting colordiff
+#   which -a zsh
+#   echo $pass | sudo -S -- sh -c 'echo '/usr/local/bin/zsh' >> /etc/shells'
+#   chsh -s /usr/local/bin/zsh
+#   echo " ------------ END ------------"
+# fi
 
 #
 # Install vim
@@ -157,6 +157,15 @@ fi
 #   brew install carthage
 #   echo " ------------ END ------------"
 # fi
+
+#
+# golang
+#
+if ! command_exists carthage ; then
+    echo "----- golang -----"
+    brew install go
+fi
+
 
 while true; do
   read -p 'Now install web apps? [Y/n]' Answer
