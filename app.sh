@@ -13,7 +13,7 @@ EOS
 #
 echo " ----- Install web apps ------"
 brew cask list | grep visual-studio-code || brew cask install visual-studio-code
-brew cask install 1password
+brew cask list | grep 1password || brew cask install 1password
 brew cask install android-file-transfer
 brew cask install java
 brew cask install android-studio
