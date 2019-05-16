@@ -12,14 +12,10 @@ function command_exists {
   command -v "$1" > /dev/null;
 }
 
-#
 # Memorize user pass
-#
 read -sp "Your Password: " pass;
 
-#
 # Mac App Store apps install
-#
 if ! command_exists mas ; then
   echo " ---- Mac App Store apps -----"
   brew install mas
@@ -27,9 +23,7 @@ if ! command_exists mas ; then
   echo " ------------ END ------------"
 fi
 
-#
 # Install zsh
-#
 # if ! command_exists zsh ; then
 #   echo " ------------ zsh ------------"
 #   brew install zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting colordiff
@@ -39,18 +33,14 @@ fi
 #   echo " ------------ END ------------"
 # fi
 
-#
 # Install vim
-#
 if ! command_exists vim ; then
   echo " ------------ Vim ------------"
   brew install vim --with-override-system-vi
   echo " ------------ END ------------"
 fi
 
-#
 # Powerline
-#
 echo " --------- Powerline ---------"
 # Font is 14pt Iconsolata for Powerline with Solarized Dark iterm2 colors.
 git clone https://github.com/bhilburn/powerlevel9k.git ~/powerlevel9k
@@ -58,9 +48,7 @@ git clone https://github.com/powerline/fonts.git ~/fonts
 ~/fonts/install.sh
 echo " ------------ END ------------"
 
-#
 # Install ruby
-#
 if ! command_exists rbenv ; then
   echo " ----------- Ruby ------------"
   brew install rbenv
@@ -75,9 +63,7 @@ if ! command_exists rbenv ; then
   echo " ------------ END ------------"
 fi
 
-#
 # Install dotfiles system
-#
 
 # echo " ---------- dotfiles ---------"
 # sh -c "`curl -fsSL https://raw.githubusercontent.com/skwp/dotfiles/master/install.sh`"
@@ -85,9 +71,7 @@ fi
 # source ~/.zshrc
 # echo " ------------ END ------------"
 
-#
 # Install Node.js env
-#
 if ! command_exists nodebrew ; then
   echo " ---------- Node.js ----------"
   curl -L git.io/nodebrew | perl - setup
@@ -100,18 +84,14 @@ if ! command_exists nodebrew ; then
   echo " ------------ END ------------"
 fi
 
-#
 # Install Yarn
-#
 if ! command_exists yarn ; then
   echo " ----------- Yarn ------------"
   brew install yarn
   echo " ------------ END ------------"
 fi
 
-#
 # TeX settings
-#
 if ! command_exists tex ; then
   echo " ------------ TeX ------------"
   brew cask install mactex
@@ -128,9 +108,7 @@ if ! command_exists tex ; then
   echo " ------------ END ------------"
 fi
 
-#
 # Install wget
-#
 if ! command_exists wget ; then
   echo " ----------- wget ------------"
   brew install wget
@@ -138,9 +116,15 @@ if ! command_exists wget ; then
   echo " ------------ END ------------"
 fi
 
-#
+# Install curl
+if ! command_exists curl ; then
+  echo " ----------- curl ------------"
+  brew install curl
+  curl --version
+  echo " ------------ END ------------"
+fi
+
 # CocoaPods
-#
 
 # if ! command_exists pod ; then
 #   echo " --------- CocoaPods ---------"
@@ -149,25 +133,26 @@ fi
 #   echo " ------------ END ------------"
 # fi
 
-#
 # Carthage
-#
 # if ! command_exists carthage ; then
 #   echo " --------- Carthage ----------"
 #   brew install carthage
 #   echo " ------------ END ------------"
 # fi
 
-#
-# golang
-#
+# Install golang
 if ! command_exists carthage ; then
     echo "----- golang -----"
     brew install go
+    echo " ------------ END ------------"
 fi
 
 # 便利なの、個人的に使うやつ
+echo "----- 個人的に便利なやつ -----"
 brew list | grep hugo || brew install hugo
+gem list | grep rabbit || gem install rabbit
+gem list | grep rails || gem install rails
+echo " ------------ END ------------"
 
 
 while true; do
