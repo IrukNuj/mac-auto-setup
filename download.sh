@@ -1,10 +1,7 @@
 #!/bin/bash
 cat << EOS
 
- AkkeyLab
-
- The elapsed time does not matter.
- Because speed is important.
+最初にこれ！
 
 EOS
 
