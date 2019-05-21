@@ -147,11 +147,20 @@ if ! command_exists carthage ; then
     echo " ------------ END ------------"
 fi
 
+# Install kotlin
+if ! command_exists kotlinc ; then
+    echo "----- golang -----"
+    brew install java
+    brew install kotlin
+    echo " ------------ END ------------"
+fi
+
+
 # 便利なの、個人的に使うやつ
 echo "----- 個人的に使うやつ -----"
 brew list | grep hugo || brew install hugo
-gem list | grep rabbit || gem install rabbit
-gem list | grep rabbiter || gem install rabbiter
+# gem list | grep rabbit || gem install rabbit
+# gem list | grep rabbiter || gem install rabbiter
 gem list | grep rails || gem install rails
 brew list | grep mysql || brew install mysql
 brew list | grep postgresql || brew install postgresql

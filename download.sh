@@ -16,6 +16,7 @@ if ! command_exists brew ; then
   brew update
   brew upgrade --all --cleanup
   brew -v
+  brew install caskroom/cask/brew-cask
   echo " ------------ END ------------"
 fi
 

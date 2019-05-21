@@ -21,6 +21,7 @@ brew cask install android-studio
 brew cask install astropad
 #brew cask install atom
 brew cask install cheatsheet
+brew cask install intellij
 brew cask install RubyMine
 brew cask install GoLand
 #brew cask install cyberduck
@@ -45,6 +46,8 @@ brew cask install imageoptim
 brew cask install soundflower
 brew cask install visual-studio-code
 brew cask install adobe-creative-cloud
+brew cask install messenger
+brew cask install kindle
 
 while true; do
   read -p 'Add "need license" apps? [Y/n]' Answer
