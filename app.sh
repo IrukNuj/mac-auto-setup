@@ -21,6 +21,8 @@ brew cask install android-studio
 brew cask install astropad
 #brew cask install atom
 brew cask install cheatsheet
+brew cask install RubyMine
+brew cask install GoLand
 #brew cask install cyberduck
 brew cask install docker
 brew cask install dropbox
@@ -38,6 +40,7 @@ brew cask install teamviewer
 brew cask install google-japanese-ime
 #brew cask install swimat
 #brew cask install spotify
+brew cask install mysqlworkbench
 brew cask install imageoptim
 brew cask install soundflower
 brew cask install visual-studio-code
