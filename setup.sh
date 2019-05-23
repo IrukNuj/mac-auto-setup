@@ -164,6 +164,8 @@ brew list | grep hugo || brew install hugo
 gem list | grep rails || gem install rails
 brew list | grep mysql || brew install mysql
 brew list | grep postgresql || brew install postgresql
+brew tap homebrew/dupes
+brew install homebrew/dupes/grep # --with-default-names
 echo " ------------ END ------------"
 
 
