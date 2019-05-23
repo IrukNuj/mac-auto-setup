@@ -149,9 +149,16 @@ fi
 
 # Install kotlin
 if ! command_exists kotlinc ; then
-    echo "----- golang -----"
+    echo "----- kotlin -----"
     brew install java
     brew install kotlin
+    echo " ------------ END ------------"
+fi
+
+# Install scala
+if ! command_exists sbt ; then
+    echo "----- scala -----"
+    brew install sbt
     echo " ------------ END ------------"
 fi
 
