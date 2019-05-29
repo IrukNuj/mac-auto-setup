@@ -49,6 +49,7 @@ brew cask install adobe-creative-cloud
 brew cask install messenger
 brew cask install kindle
 brew cask install shiftit
+brew cask install processing
 
 while true; do
   read -p 'Add "need license" apps? [Y/n]' Answer
