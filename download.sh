@@ -1,13 +1,13 @@
 #!/bin/bash
 cat << EOS
 
-最初にこれ！
+最初にこれ
 
 EOS
 
-function command_exists {
-  command -v "$1" > /dev/null;
-}
+# function command_exists {
+#   command -v "$1" > /dev/null;
+# }
 
 # Install homebrew.
 if ! command_exists brew ; then
