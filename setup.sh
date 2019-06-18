@@ -173,6 +173,7 @@ brew list | grep mysql || brew install mysql
 brew list | grep postgresql || brew install postgresql
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep # --with-default-names
+brew install tree
 echo " ------------ END ------------"
 
 
