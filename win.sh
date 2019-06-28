@@ -23,13 +23,12 @@ test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew
 test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
 echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
 
-brew doctor
-
 mkdir /mnt/c/Ubuntu
 mkdir /mnt/c/Ubuntu/works
 ln -s /mnt/c/Ubuntu/works/ ~/works
 
-cd works
+mkdir ~/works
+cd ~/works
 git clone https://github.com/IrukNuj/mac-auto-setup.git
 https://github.com/IrukNuj/dotfile.git
 
