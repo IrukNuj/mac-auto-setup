@@ -174,6 +174,7 @@ brew list | grep postgresql || brew install postgresql
 brew tap homebrew/dupes
 brew install homebrew/dupes/grep # --with-default-names
 brew install tree
+brew install awscli
 echo " ------------ END ------------"
 
 
