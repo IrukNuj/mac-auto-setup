@@ -50,6 +50,7 @@ brew cask install messenger
 brew cask install kindle
 brew cask install shiftit
 brew cask install processing
+brew cask install caskroom/homebrew-cask/switchresx
 
 # fonts
 brew tap caskroom/fonts
