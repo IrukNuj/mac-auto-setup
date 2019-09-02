@@ -51,6 +51,7 @@ brew cask install kindle
 brew cask install shiftit
 brew cask install processing
 brew cask install caskroom/homebrew-cask/switchresx
+brew cask install alfred
 
 # fonts
 brew tap caskroom/fonts
