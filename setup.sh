@@ -175,6 +175,7 @@ brew tap homebrew/dupes
 brew install homebrew/dupes/grep # --with-default-names
 brew install tree
 brew install awscli
+brew install awsebcli
 brew install ant
 echo " ------------ END ------------"
 
