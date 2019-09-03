@@ -52,6 +52,7 @@ brew cask install shiftit
 brew cask install processing
 brew cask install caskroom/homebrew-cask/switchresx
 brew cask install alfred
+brew cask install homebrew/cask-versions/sequel-pro-nightly
 
 # fonts
 brew tap caskroom/fonts
