@@ -178,6 +178,7 @@ brew install awscli
 brew install awsebcli
 brew install ant
 brew install gibo
+brew install nodenv
 echo " ------------ END ------------"
 
 
