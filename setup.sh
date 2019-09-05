@@ -180,6 +180,7 @@ brew install ant
 brew install gibo
 brew install nodenv
 brew install direnv
+brew install jq
 echo " ------------ END ------------"
 
 
