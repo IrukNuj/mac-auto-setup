@@ -17,7 +17,7 @@ brew cask list | grep 1password || brew cask install 1password
 brew cask install android-file-transfer
 brew cask install java
 brew cask install android-studio
-#brew cask install arduino
+brew cask install arduino
 brew cask install astropad
 #brew cask install atom
 brew cask install cheatsheet
@@ -32,10 +32,10 @@ brew cask install duet
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install skype
-#brew cask install sourcetree
+brew cask install sourcetree
 #brew cask install sublime-text
 brew cask install teamviewer
-#brew cask install virtualbox
+brew cask install virtualbox
 #brew cask install virtualbox-extension-pack
 #brew cask install vlc
 brew cask install google-japanese-ime
@@ -54,6 +54,9 @@ brew cask install caskroom/homebrew-cask/switchresx
 brew cask install alfred
 brew cask install homebrew/cask-versions/sequel-pro-nightly
 brew cask install dash
+brew cask install microsoft-office
+brew cask install intellij-idea
+brew cask install clip-studio-paint
 
 # fonts
 brew tap caskroom/fonts
@@ -63,22 +66,22 @@ echo " ----- フォント一覧！ ------"
 brew cask install font-ricty-diminished
 
 
-while true; do
-  read -p 'Add "need license" apps? [Y/n]' Answer
-  case $Answer in
-    '' | [Yy]* )
-      brew cask install microsoft-office
-      brew cask install intellij-idea
-      brew cask install clip-studio-paint
-      break;
-      ;;
-    [Nn]* )
-      echo "Skip install"
-      break;
-      ;;
-    * )
-      echo Please answer YES or NO.
-  esac
-done;
-echo " ------------ END ------------"
+# while true; do
+#   read -p 'Add "need license" apps? [Y/n]' Answer
+#   case $Answer in
+#     '' | [Yy]* )
+#       brew cask install microsoft-office
+#       brew cask install intellij-idea
+#       brew cask install clip-studio-paint
+#       break;
+#       ;;
+#     [Nn]* )
+#       echo "Skip install"
+#       break;
+#       ;;
+#     * )
+#       echo Please answer YES or NO.
+#   esac
+# done;
+# echo " ------------ END ------------"
 
