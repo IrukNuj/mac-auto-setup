@@ -19,7 +19,7 @@ brew cask install java
 brew cask install android-studio
 brew cask install arduino
 brew cask install astropad
-#brew cask install atom
+brew cask install atom
 brew cask install cheatsheet
 brew cask install intellij-idea
 brew cask install RubyMine
