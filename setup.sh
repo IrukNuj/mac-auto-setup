@@ -181,6 +181,7 @@ brew install gibo
 brew install nodenv
 brew install direnv
 brew install jq
+brew install translate-shell
 echo " ------------ END ------------"
 
 
