@@ -162,6 +162,9 @@ if ! command_exists sbt ; then
     echo " ------------ END ------------"
 fi
 
+# Install Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
 
 # 便利なの、個人的に使うやつ
 echo "----- 個人的に使うやつ -----"
