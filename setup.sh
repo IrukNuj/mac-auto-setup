@@ -172,6 +172,7 @@ brew list | grep hugo || brew install hugo
 # gem list | grep rabbit || gem install rabbit
 # gem list | grep rabbiter || gem install rabbiter
 gem list | grep rails || gem install rails
+gem install solargraph
 brew list | grep mysql || brew install mysql
 brew list | grep postgresql || brew install postgresql
 brew tap homebrew/dupes
