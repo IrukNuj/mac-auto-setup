@@ -58,6 +58,7 @@ brew cask install microsoft-office
 brew cask install intellij-idea
 brew cask install clip-studio-paint
 brew cask install 0xed
+brew cask install db-browser-for-sqlite
 
 # fonts
 brew tap caskroom/fonts
