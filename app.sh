@@ -57,6 +57,7 @@ brew cask install dash
 brew cask install microsoft-office
 brew cask install intellij-idea
 brew cask install clip-studio-paint
+brew cask install 0xed
 
 # fonts
 brew tap caskroom/fonts
